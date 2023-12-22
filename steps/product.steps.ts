@@ -5,3 +5,7 @@ import { Product } from '../pages/product.page';
 Then('I will add the backpack to the cart', async () => {
   await new Product(getPage()).addBackPackToCart();
 });
+
+Then('I can select the cart', async () => {
+  await new Product(getPage()).clickCart()
+});

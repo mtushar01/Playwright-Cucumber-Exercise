@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2135446026
+              "duration": 3042863903
             }
           },
           {
@@ -23,21 +23,37 @@
             "line": 4,
             "name": "I open the \"https://www.saucedemo.com/\" page",
             "match": {
-              "location": "steps/common.steps.ts:4"
+              "location": "steps/common.steps.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 537460981
+              "duration": 604353599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I will login as 'standard_user'",
+            "match": {
+              "location": "steps/login.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 428928844
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "I should see the title \"Swag Labs\" //updated",
+            "name": "I should see the title \"Swag Labs\"",
+            "match": {
+              "location": "steps/login.steps.ts:5"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 18889121
             }
           },
           {
@@ -45,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 251746890
+              "duration": 464864681
             }
           }
         ],
@@ -64,7 +80,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1233140101
+              "duration": 1669789965
             }
           },
           {
@@ -73,11 +89,11 @@
             "line": 4,
             "name": "I open the \"https://www.saucedemo.com/\" page",
             "match": {
-              "location": "steps/common.steps.ts:4"
+              "location": "steps/common.steps.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 435256163
+              "duration": 481648161
             }
           },
           {
@@ -86,11 +102,24 @@
             "line": 11,
             "name": "I will login as 'locked_out_user'",
             "match": {
-              "location": "steps/login.steps.ts:9"
+              "location": "steps/login.steps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 234834627
+              "duration": 228657922
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see a error \"Epic sadface: Sorry, this user has been locked out.\"",
+            "match": {
+              "location": "steps/login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16812846
             }
           },
           {
@@ -98,7 +127,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 200044846
+              "duration": 276306767
             }
           }
         ],
@@ -120,7 +149,7 @@
         "description": "",
         "id": "purchase-feature;validate-successful-purchase-text",
         "keyword": "Scenario",
-        "line": 6,
+        "line": 18,
         "name": "Validate successful purchase text",
         "steps": [
           {
@@ -128,7 +157,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1096296098
+              "duration": 1902831988
             }
           },
           {
@@ -137,11 +166,11 @@
             "line": 4,
             "name": "I open the \"https://www.saucedemo.com/\" page",
             "match": {
-              "location": "steps/common.steps.ts:4"
+              "location": "steps/common.steps.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 417704305
+              "duration": 461386934
             }
           },
           {
@@ -150,11 +179,11 @@
             "line": 7,
             "name": "I will login as 'standard_user'",
             "match": {
-              "location": "steps/login.steps.ts:9"
+              "location": "steps/login.steps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 214462012
+              "duration": 339058042
             }
           },
           {
@@ -167,7 +196,85 @@
             },
             "result": {
               "status": "passed",
-              "duration": 49647615
+              "duration": 50816079
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I can select the cart",
+            "match": {
+              "location": "steps/product.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 156861115
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I can select Checkout",
+            "match": {
+              "location": "steps/checkout.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79110410
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I can fill 'John' firstname, 'Doe' lastname, and '43444' zipcode",
+            "match": {
+              "location": "steps/checkout.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 94576282
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I can select Continue",
+            "match": {
+              "location": "steps/checkout.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63837957
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I can select Finish",
+            "match": {
+              "location": "steps/checkout.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63085960
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see 'Thank you for your order!'",
+            "match": {
+              "location": "steps/checkout.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23596123
             }
           },
           {
@@ -175,7 +282,295 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 312138142
+              "duration": 278586714
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "purchase-feature;validate-successful-purchase-text",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Validate successful purchase text",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1663199036
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the \"https://www.saucedemo.com/\" page",
+            "match": {
+              "location": "steps/common.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 469352666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I will login as 'standard_user'",
+            "match": {
+              "location": "steps/login.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 285695017
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I will add the backpack to the cart",
+            "match": {
+              "location": "steps/product.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87855405
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I can select the cart",
+            "match": {
+              "location": "steps/product.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 163057530
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I can select Checkout",
+            "match": {
+              "location": "steps/checkout.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62140203
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I can fill 'Justin' firstname, 'Time' lastname, and '323344' zipcode",
+            "match": {
+              "location": "steps/checkout.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 81919159
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I can select Continue",
+            "match": {
+              "location": "steps/checkout.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63254649
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I can select Finish",
+            "match": {
+              "location": "steps/checkout.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63861063
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see 'Thank you for your order!'",
+            "match": {
+              "location": "steps/checkout.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9602805
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 311930936
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "purchase-feature;validate-successful-purchase-text",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Validate successful purchase text",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1643400484
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the \"https://www.saucedemo.com/\" page",
+            "match": {
+              "location": "steps/common.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 474899108
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I will login as 'standard_user'",
+            "match": {
+              "location": "steps/login.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 293568273
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I will add the backpack to the cart",
+            "match": {
+              "location": "steps/product.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 97420999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I can select the cart",
+            "match": {
+              "location": "steps/product.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 212409126
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I can select Checkout",
+            "match": {
+              "location": "steps/checkout.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74221962
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I can fill 'Oscar' firstname, 'Lott' lastname, and '122323' zipcode",
+            "match": {
+              "location": "steps/checkout.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 93958115
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I can select Continue",
+            "match": {
+              "location": "steps/checkout.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85813601
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I can select Finish",
+            "match": {
+              "location": "steps/checkout.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71716031
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see 'Thank you for your order!'",
+            "match": {
+              "location": "steps/checkout.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11734745
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 260881753
             }
           }
         ],
